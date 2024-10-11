@@ -1,0 +1,123 @@
+* 
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans",sans-serif;
+    color: #440C4D;
+    line-height: 1.8;
+    margin: 0;
+    background-color: #FEF9FF;
+}
+
+.topbar
+{
+    position: fixed;
+    background: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.topbar nav
+{
+    float: right;
+    margin-top: 10px;
+}
+
+.topbar nav ul
+{
+    list-style:none;
+    margin: 0;
+  padding: 0;
+}
+
+.topbar nav li
+
+{
+    display: inline;
+}
+
+.topbar nav a 
+{
+    color: #E6D5E9;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 62px;
+    line-height:48px;
+    /* padding: 20px; */
+}
+
+.topbar nav a:active 
+{
+    color: #B78523;
+}
+
+.topbar nav a:hover 
+{
+    color: #AE68B9;
+}
+
+.topbar .logo
+{
+    float: left;
+    /* color: ; */
+    font-size: 36px;
+    text-decoration: none;
+    margin-top: 0;
+}
+
+.logo
+{
+    background: -webkit-linear-gradient(#AE68B9,#E6D5E9);
+    background-clip: text;
+    font-size: 36px;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.banniere img
+{
+    width: 100%;
+    height: auto;
+}
+
+
+.elements
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.elements div
+{
+    display: flex;
+    background-color: bisque;
+    flex-direction: column;
+    justify-content:center;
+    width: 20%;
+    border-spacing: 20px;
+    position: relative;
+    min-height: 1px;
+   
+}
+.elements div p
+{  
+    margin: 0;
+}
+
+
+
+footer 
+{
+    background-color: #440C4D;
+    color: #FEF9FF;
+}
