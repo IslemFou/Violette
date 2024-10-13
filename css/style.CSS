@@ -9,8 +9,8 @@ body
     font-family: "Plus Jakarta Sans",sans-serif;
     color: #440C4D;
     line-height: 1.8;
-    margin: 0;
     background-color: #FEF9FF;
+    margin: 0;
 }
 
 header {
@@ -79,7 +79,7 @@ header {
     -webkit-text-fill-color: transparent;
     text-decoration: none;
     text-transform: uppercase;
-    margin-top: 5rem;
+    margin: 1.3rem;
 }
 
 .banniere img
@@ -137,29 +137,185 @@ header {
         height: 137px;
         width: 137px;
         border-radius: 17px;
-        box-shadow: #AE68B9;
+        /* box-shadow: #AE68B9; */
         background-color: rgb(255, 255, 255);
         margin: 10px;
         /* centrer un unique element verticalement et horizontalement */
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow:2px 3px 8px 3px rgba (201, 66, 223, 28);
+        box-shadow: 0 4px 8px 0 rgba(230, 213, 233, 0.8), 0 6px 20px 0 rgba(251, 168, 255, 0.77);
+        
     }
+
+    .svgflex li:hover
+{
+    background-color: #F6C0FF; 
+}
     .svgflex p
     {
         
-        0margin: 10px 60px 10px 60px;
+        margin: 10px 60px 10px 60px;
     }
 
+/* Section 2 */
+
+
+/* .tendances
+{
+    margin: 2rem;
+} */
+.tendances .Globaldiv
+{
+/* background-color: aqua; */
+display: flex;
+flex-direction: row;
+justify-content:space-between;
+}
+
+/* div.Galerie 
+
+{
+    margin: 0.5rem;
+} */
+
+
+div.Galerie img {
+    width:260px;
+    height:600px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(230, 213, 233, 0.8), 0 6px 20px 0 rgba(251, 168, 255, 0.77);
+    transition: transform 0.2s;
+    /* margin-bottom: 25px; */
+}
+  
+  div.Galerie:hover {
+    
+    transform: scale(1.1);
+  }
+  
+  
+  div.desc {
+    font-size: x-large;
+    font-weight:bolder;
+    padding: 0.2rem;
+    text-align: center;
+  }
+
+/* section clienteles */
+
+
+.clientFlex
+
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+  .clienteles 
+  {
+/* background-color: #F6C0FF; */
+padding: 1.5rem;
+  }
+
+div  .clienteles 
+{
+    background-color: #ffffff;
+    margin: 1rem;
+    border-radius: 1.8rem;
+    box-shadow: 0 4px 8px 0 rgba(230, 213, 233, 0.8), 0 6px 20px 0 rgba(251, 168, 255, 0.77);
+}
+  .clienteles p
+  {
+    padding: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+.profile
+{
+    display:flex;
+    padding: 1.5rem;
+}
+.profile img
+{
+    width: 100px;
+    height: 100px;
+    object-fit:cover;
+}
+
+.profile p
+{
+    font-weight: bolder;
+    margin-left: 0.5rem;
+}
 
 
 
 
-
-
-footer 
+.footer 
 {
     background-color: #440C4D;
-    color: #FEF9FF;
+    color: #FEF9FF; 
 }
+
+.footer a
+{
+    text-decoration: none;
+    color: inherit;
+    margin: 1rem;
+}
+
+.footer .linksF
+{
+    /* float:initial; */
+    font-weight: bold;
+    margin: 7rem;
+    display: inline;
+}
+
+.femmTarifsContact
+{
+    display: flex;
+    justify-items:flex-start;
+    justify-content: space-evenly;
+}
+.footer hr
+{
+    border-width: 0cap;
+}
+.femmTarifsContact h2,ul
+{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+.footer .socialIcons img
+{
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #F6C0FF;
+    border-color: #F6C0FF;
+}
+
+.formcontact input[type=email], input[type=submit] {
+    border: none;
+    background-color: none;
+    border-radius: 1.5rem;
+    border-bottom: 2px solid #F6C0FF;
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  }
+
+.formcontact input[type=submit]
+  {
+    width: 50%;
+    background-color: #AE68B9;
+    border-bottom:none;
+  }
