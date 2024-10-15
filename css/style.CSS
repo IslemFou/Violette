@@ -13,6 +13,11 @@ body
     margin: 0;
 }
 
+main
+{
+    margin:0 2rem;
+}
+
 header {
     background-image: url('../images/imgs/imagebanniere.jpg');
     background-position: center left 0;
@@ -57,16 +62,27 @@ header {
     padding: 1rem;
 }
 
-
-.topbar nav a:active 
+.topbar a:active 
 {
     color: #B78523;
 }
 
-.topbar nav a:hover 
+.topbar a:hover 
 {
     color: #AE68B9;
 }
+.topbar .button
+{
+    padding: .5rem;
+    border:1px solid #AE68B9;
+    border-radius: 10px;
+}
+
+.topbar .button:hover
+{
+    /* color: #B78523; */
+}
+
 
 /* .topbar .logo
 {
@@ -164,6 +180,11 @@ header {
 
 /* Section 2 */
 
+h1
+{
+    text-align: center;
+    margin: 1rem;
+}
 
 /* .tendances
 {
@@ -323,3 +344,34 @@ div  .clienteles
     background-color: #AE68B9;
     border-bottom:none;
   }
+
+/* Form réservation */
+fieldset
+{
+    background-color:#E6D5E9;
+    border-radius: 1rem;
+}
+input[type="text"], input[type="email"], textarea 
+{
+    font-family:"Plus Jakarta Sans",sans-serif;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2.5px  solid #B78523 ;
+    width:90%;
+    margin: 1rem;
+    padding: .5rem;
+}
+
+/* input[type="button"]
+{
+    background-color:;
+} */
+
+
+textarea[placeholder]
+{
+font-family:"Plus Jakarta Sans",sans-serif;
+
+}
