@@ -279,7 +279,7 @@ div  .clienteles
 }
 
 
-
+/* footer */
 
 .footer 
 {
@@ -319,16 +319,35 @@ div  .clienteles
     list-style: none;
 }
 
-.footer .socialIcons img
+.socialIcons
+{
+    display: flex;
+    justify-content:flex-start;
+    padding: 1.5rem;
+    align-items: center;
+}
+ .socialIcons svg
 {
     width: 1.5rem;
     height: 1.5rem;
     color: #F6C0FF;
-    border-color: #F6C0FF;
+    /* border-color: #F6C0FF; */
+    /* stroke: #E6D5E9; */
+    fill: #E6D5E9;
+    margin: 2rem;
 }
 
-.formcontact input[type=email], input[type=submit] {
-    border: none;
+.emailfooter
+{
+    border-color: #AE68B9;
+}
+
+
+/* footer contact formulaire */
+
+.formcontact .emailform, .emailfooter
+{
+    
     background-color: none;
     border-radius: 1.5rem;
     border-bottom: 2px solid #F6C0FF;
@@ -336,14 +355,22 @@ div  .clienteles
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
+  border: none;
   }
 
-.formcontact input[type=submit]
+.formcontact button
   {
     width: 50%;
     background-color: #AE68B9;
     border-bottom:none;
+    border-radius: 1.5rem;
+    padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+
   }
+
+
 
 /* Page Réservation */
 
@@ -388,7 +415,7 @@ legend
     color: #E6D5E9;
 }
 
-input[type="text"], input[type="email"], textarea 
+input[type="text"], .emailform, textarea 
 {
     background-color: transparent;
     border-top: none;
@@ -426,6 +453,7 @@ textarea[placeholder], input[placeholder]
     background-color: #B78523;
     color: #E6D5E9;
     border-color: #B78523;
+    stroke: #E6D5E9;
 }
 
 
