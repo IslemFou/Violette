@@ -21,7 +21,7 @@ main
 header {
     background-image: url('../images/imgs/imagebanniere.jpg');
     background-position: center left 0;
-    height: 80vh;
+    height: 90vh;
     background-size: cover;
     object-fit: contain;
 }
@@ -78,10 +78,10 @@ header {
     border-radius: 10px;
 }
 
-.topbar .button:hover
+/* .topbar .button:hover
 {
-    /* color: #B78523; */
-}
+    color: #B78523;
+} */
 
 
 /* .topbar .logo
@@ -345,20 +345,56 @@ div  .clienteles
     border-bottom:none;
   }
 
+/* Page Réservation */
+
+/* .reservationform
+{
+  
+} */
+
+
+.h1Reserver
+{
+    color: #E6D5E9;
+    text-transform: uppercase;
+    font-size:1.5rem;
+}
 /* Form réservation */
+
+
 fieldset
 {
-    background-color:#E6D5E9;
+    background-color:#f7d8fdc2;
     border-radius: 1rem;
+    width: 60%;
+    border: none;
+    margin: 0 auto;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
+
+fieldset p
+{
+    margin:0 2rem ;
+}
+
+legend
+{
+    font-size: large;
+    font-weight: bold;
+    transform: translateY(-40%);
+    color: #E6D5E9;
+}
+
 input[type="text"], input[type="email"], textarea 
 {
-    font-family:"Plus Jakarta Sans",sans-serif;
     background-color: transparent;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 2.5px  solid #B78523 ;
+    border-bottom: 2.5px  solid #440C4D ;
     width:90%;
     margin: 1rem;
     padding: .5rem;
@@ -370,8 +406,62 @@ input[type="text"], input[type="email"], textarea
 } */
 
 
-textarea[placeholder]
+textarea[placeholder], input[placeholder]
 {
-font-family:"Plus Jakarta Sans",sans-serif;
+    font-family:"Plus Jakarta Sans",sans-serif;
+    font-size: 1rem;
+}
 
+.clientprof
+{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 1rem;
+    justify-content: space-around;
+    width: 90%;
+}
+
+#Professionnel:hover , #Client:hover, #envoyer:hover
+{
+    background-color: #B78523;
+    color: #E6D5E9;
+    border-color: #B78523;
+}
+
+
+#Professionnel, #Client, #envoyer, .reservationform button
+{
+    padding: 1rem;
+    width: 50%;
+    font-family:"Plus Jakarta Sans",sans-serif;
+    color: #440C4D;
+    font-weight: bold;
+    background: none;
+    border: 2px solid #440C4D;
+    border-radius: .7rem;
+    margin: .5rem;
+}
+
+.reservationform button svg
+{
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #440C4D;
+    stroke: #440C4D;
+    /* transform: translateY(35%); */
+}
+
+.reservationform button
+{
+    font-size: larger;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#envoyer svg:hover
+{
+   stroke :#E6D5E9;
 }
