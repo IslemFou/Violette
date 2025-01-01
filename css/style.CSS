@@ -18,17 +18,16 @@ main {
 }
 
 header {
+  position: relative;
   background-image: url("../images/imgs/imagebanniere.jpg");
   background-position: center left 0;
   height: 90vh;
   background-size: cover;
   object-fit: contain;
 
-  div {
-    height: 50vh;
-  }
-
   .topbar {
+    position: absolute;
+    width: 100%;
     background: none;
     display: flex;
     flex-direction: row-reverse;
@@ -80,7 +79,11 @@ header {
 }
 
 .elements {
+  position: absolute;
+  left: 0;
+  bottom: 10%;
   display: flex;
+  width: 100%;
   flex-direction: row;
   justify-content: space-around;
 
@@ -126,6 +129,7 @@ header {
         0 6px 20px 0 rgba(251, 168, 255, 0.77);
     }
   }
+
   p {
     margin: 10px 60px 10px 60px;
   }
@@ -323,9 +327,16 @@ button:hover {
 #header-reservation {
   background-image: url("../images/imgs/imagebanniere.jpg");
   background-position: center left 0;
-  height: 110vh;
+  height: 120vh;
   background-size: cover;
   object-fit: contain;
+
+  .reservationform {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+  }
 }
 
 .h1Reserver {
@@ -386,28 +397,42 @@ input[placeholder] {
   width: 90%;
 }
 
-#Professionnel:hover,
-#Client:hover,
-#envoyer:hover {
-  background-color: #b78523;
-  color: #e6d5e9;
-  border-color: #b78523;
-  stroke: #e6d5e9;
-}
-
 #Professionnel,
 #Client,
 #envoyer,
 .reservationform button {
   padding: 1rem;
+  /* outline: none; */
   width: 30%;
+  height: 50px;
+  line-height: .8;
+  font-size: 1.3rem;
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #440c4d;
   font-weight: bold;
-  background: none;
+  background-color: transparent;
   border: 2px solid #440c4d;
   border-radius: 0.7rem;
   margin: 1.5rem;
+  transition: all .5s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+#Professionnel:hover,
+#Client:hover,
+#envoyer:hover {
+  background-color: #b78523;
+  color: #e6d5e9;
+  border: 0px solid #b78523;
+  /* stroke: #e6d5e9; */
+}
+
+#envoyer:hover svg {
+  stroke: #e6d5e9;
 }
 
 .reservationform button svg {
@@ -415,6 +440,7 @@ input[placeholder] {
   height: 1.5rem;
   color: #440c4d;
   stroke: #440c4d;
+  transition: all .5s ease-in-out;
   /* transform: translateY(35%); */
 }
 
