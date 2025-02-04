@@ -456,6 +456,18 @@ textarea:focus {
   stroke: #e6d5e9;
 }
 
+/* --------------------- CSS for JS
+*/
+.styleError
+{
+  color: red;
+  background-color: rgb(243, 202, 186);
+  padding: 1 rem;
+}
+
+
+
+
 /* Section Offres */
 
 section {
