@@ -21,13 +21,13 @@
         </nav>
         <div class="reservationform">
             <h1 class="h1Reserver">Réserver chez VIOLETTE PARIS</h1>
-            <form action="#" method="post" enctype="multipart/form-data">
+            <form action="#" method="post" enctype="multipart/form-data" id="form">
                 <fieldset>
                     <legend>Réserver</legend>
                     <p>Je suis, </p>
                     <div class="clientprof">
-                        <input type="button" value="Client" onclick="msg()" id="Client" name="client">
-                        <input type="button" value="Professionnel" onclick="msg()" id="Professionnel"
+                        <input type="button" value="Client" onclick="msg()" id="client" name="client">
+                        <input type="button" value="Professionnel" onclick="msg()" id="professionnel"
                             name="Professionnel">
                     </div>
                     <input type="text" id="Nom" name="nom" placeholder="Votre nom" required>
@@ -172,5 +172,5 @@
 
     </footer>
 </body>
-
+<script src="./violette.js"></script>
 </html>

@@ -397,8 +397,8 @@ input[placeholder] {
   width: 90%;
 }
 
-#Professionnel,
-#Client,
+#professionnel,
+#client,
 #envoyer,
 .reservationform button {
   padding: 1rem;
@@ -422,8 +422,8 @@ textarea:focus {
   outline: none;
 }
 
-#Professionnel:hover,
-#Client:hover,
+#professionnel:hover,
+#client:hover,
 #envoyer:hover {
   background-color: #b78523;
   color: #e6d5e9;
